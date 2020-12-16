@@ -18,8 +18,8 @@ function generateObj (min, max, array) {
   // 随机 10 以内的数，运算结果
   rObj.r = getRandomInt(min, max)
   if (rObj.t === OPERATOR_ADD) {
-    rObj.x = getRandomInt(min, rObj.r)
-    rObj.y = rObj.r - rObj.x
+    rObj.y = getRandomInt(min, rObj.r)
+    rObj.x = rObj.r - rObj.y
   } else if (rObj.t === OPERATOR_MINUS) {
     // 如果是减法的话，rObj.x 要大于等于 rObj.r
     rObj.x = getRandomInt(rObj.r, max)
